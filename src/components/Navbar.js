@@ -21,11 +21,16 @@ export default function Navbar() {
           {/* <a href="#testimonials" className="mr-5 hover:text-white">
             Testimonials
           </a> */}
+          <a href="#skills" className="mr-5 hover:text-white">
+            Hire Me
+          </a>
         </nav>
+        
         <a
-          href="#contact"
+          href="https://drive.google.com/file/d/1NTrlBkz2sbG0dtWpdDXn13GJcE29dU-r/view?usp=sharing"
+          target="_blank"
           className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
-          Hire Me
+          Access My CV
           <ArrowRightIcon className="w-4 h-4 ml-1" />
         </a>
       </div>

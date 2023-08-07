@@ -5,24 +5,25 @@ import { projects } from "../data";
 export default function Projects() {
   return (
     <section id="projects" className="text-gray-400 bg-gray-900 body-font">
-      <div className="container px-5 py-10 mx-auto text-center lg:px-40">
+      <div className="container px-5 py-5 mx-auto text-center lg:px-40">
         <div className="flex flex-col w-full mb-20">
           <CodeIcon className="mx-auto inline-block w-10 mb-4" />
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
             Apps I've Built
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-            facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
-            fuga dolore.
+            Through out my experience as a developer, below are some of the personal research projects I have done
+          to enhance my craft;
+          
           </p>
         </div>
-        <div className="flex flex-wrap m-4">
+        <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
           {projects.map((project) => (
+            
             <a
               href={project.link}
               key={project.image}
-              className="px-8 relative w-full py-4 border-4 border-gray-800 ">
+              className="px-8 relative py-4 border-2 border-gray-800">
               <div className="flex relative justify-center">
                 <img
                   alt="gallery"
@@ -30,15 +31,6 @@ export default function Projects() {
                   src={project.image}
                 />
                 
-                {/* <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
-                    {project.subtitle}
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-white mb-3">
-                    {project.title}
-                  </h1>
-                  <p className="leading-relaxed">{project.description}</p>
-                </div> */}
               </div>
               <div className="mt-2 mx-4 px-8 bg-gray-900"><h1 className="title-font text-lg font-medium text-white mb-3">
                     {project.title}

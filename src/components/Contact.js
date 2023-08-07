@@ -26,99 +26,47 @@ export default function Contact() {
 
   return (
     <section id="contact" className="relative">
-      <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
-        <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-          <iframe
-            width="100%"
-            height="100%"
-            title="map"
-            className="absolute inset-0"
-            frameBorder={0}
-            marginHeight={0}
-            marginWidth={0}
-            style={{ filter: "opacity(0.7)" }}
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15958.93892067135!2d32.62879434534002!3d0.3708851513804115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177db9effd93d32b%3A0x235f5285392e9a96!2sNaalya%2C%20Kampala!5e0!3m2!1sen!2sug!4v1691159513716!5m2!1sen!2sug"
-          />
-          <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md" style={{width:450}}>
-            <div className="lg:w-1/2 px-6">
-              <h2 className="title-font font-semibold text-white tracking-widest text-xs">
-                ADDRESS
-              </h2>
-              <p className="mt-1">
-                Naalya <br />
-                Wakiso, Uganda
-              </p>
-            </div>
-            <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
-              <h2 className="title-font font-semibold text-white tracking-widest text-xs">
-                EMAIL
-              </h2>
-              <a className="text-indigo-400 leading-relaxed">
-                rukejoseph@gmail.com
-              </a>
-              <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
-                PHONE
-              </h2>
-              <p className="leading-relaxed">+256 770 963 149</p>
-            </div>
-          </div>
-        </div>
-        <form
-          netlify
-          name="contact"
-          onSubmit={handleSubmit}
-          className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
-          <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
-            Hire Me
-          </h2>
-          <p className="leading-relaxed mb-5">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
-            suscipit officia aspernatur veritatis. Asperiores, aliquid?
-          </p>
-          <div className="relative mb-4">
-            <label htmlFor="name" className="leading-7 text-sm text-gray-400">
-              Name
-            </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-              onChange={(e) => setName(e.target.value)}
-            />
-          </div>
-          <div className="relative mb-4">
-            <label htmlFor="email" className="leading-7 text-sm text-gray-400">
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </div>
-          <div className="relative mb-4">
-            <label
-              htmlFor="message"
-              className="leading-7 text-sm text-gray-400">
-              Message
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-              onChange={(e) => setMessage(e.target.value)}
-            />
-          </div>
-          <button
-            type="submit"
-            className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-            Submit
+      <footer className="relative bg-gray-800 pt-8 pb-6">
+  <div className="container mx-auto px-4">
+    <div className="flex flex-wrap text-left lg:text-left">
+      <div className="w-full lg:w-6/12 px-4">
+        <h4 className="text-2xl fonat-semibold text-blueGray-700">Let's get in touch!</h4>
+        <h5 className="text-md mt-0 mb-2 text-blueGray-600">
+          Find me on any of these platforms.
+        </h5>
+        <div className="mt-6 lg:mb-0 mb-6">
+          <button class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i className="fab fa-twitter"></i>
           </button>
-        </form>
+          <button className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i className="fab fa-github"></i>
+          </button>
+          <button class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i className="fab fa-instagram"></i>
+          </button>
+        </div>
       </div>
+      <div className="w-full lg:w-6/12 px-4">
+        <div className="flex flex-wrap items-top mb-6">
+          <div className="w-full lg:w-5/12 px-4 ml-auto">
+            <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Contact Me</span>
+            <p>Tel: +256 770 963 149</p>
+            <p>Email: rukejoseph@gmail.com</p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <hr className="my-6 border-blueGray-300"></hr>
+    <div className="flex flex-wrap items-center md:justify-between justify-center">
+      <div className="w-full md:w-4/12 px-4 mx-auto text-center">
+        <div className="text-sm text-blueGray-500 font-semibold py-1">
+          Copyright © <span id="get-current-year">2023</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
     </section>
   );
 }

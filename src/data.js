@@ -1,20 +1,29 @@
 export const projects = [
   {
     title: "E-Accountant",
-    subtitle: "Technologies: .Net Core, SQL, Bootstrap",
+    subtitle: "Technologies: Web, C#, .Net Core, SQL, JQuery, Bootstrap",
     description:
       "E-Accountant is a web application whose aim is to help you track life goals, savings as well as how your goals feed into investments.",
-    image: "./projects1-01-01.png",
+    image: "./eaccountant.png",
     link: "",
   },
-  // {
-  //   title: "E-Accountant",
-  //   subtitle: "Technologies: .Net Core, SQL, Bootstrap",
-  //   description:
-  //     "E-Accountant is a web application whose aim is to help you track life goals, savings as well as how your goals feed into investments.",
-  //   image: "./eaccountant.PNG",
-  //   link: "",
-  // },
+  {
+    title: "Printhulk Business Site",
+    subtitle: "Technologies: Web, C#, .Net Core, Bootstrap",
+    description:
+      "Printhulk is a web application for show casing the work done by one of the local companies which deals in promotional items.",
+    image: "./printhulk.png",
+    link: "",
+  },
+  {
+    title: "Policia",
+    subtitle: "Technologies: Mobile, C#, .Net MAUI, Firebase, SQLite",
+    description:
+      "Policia is a mobile application which users can use to report cases to police stations near them, access contacts to near by police stations and also get latest communication from Police. Users can also access Lost and found items.",
+    image: "./policia.png",
+    link: "",
+  },
+  
   // {
   //   title: "DevChat",
   //   subtitle: "React and Firebase",
