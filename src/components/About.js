@@ -5,7 +5,7 @@ export default function About() {
     <section id="about">
       <div className="row mt-5">
         <div className="col-sm-6 p-5">
-        Hi, I'm Joseph.
+       <h2> Hi, I'm Joseph.</h2>
         <br className="hidden lg:inline-block" />I build web and mobile apps.
         <p className="mb-8 leading-relaxed">
             I am a Microsoft Certified self taught software developer.
@@ -17,14 +17,14 @@ export default function About() {
             <div className="flex justify-center">
               <a
                 href="#contact"
-                className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
+                className="btn btn-info" style={{marginRight:"10px"}}>
                 Work With Me
               </a>
-              <a
+              {/* <a
                 href="#projects"
-                className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
+                className="btn btn-primary">
                 See My Past Work
-              </a>
+              </a> */}
           </div>
         </div>
         <div className="col-sm-6 text-center">

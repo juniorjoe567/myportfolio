@@ -5,7 +5,7 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Testimonials from "./components/Testimonials";
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, NavLink, Navigate } from 'react-router-dom';
 
 export default function App() {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
@@ -22,7 +22,7 @@ export default function App() {
        <Contact />
      </main> */}
     
-    <nav className="navbar navbar-expand-lg bg-light">
+    <nav className="navbar navbar-expand-lg">
   <div className="container-fluid">
   <a className="navbar-brand" href="#">
       <img src="./images/react.svg" alt="Bootstrap" width="30" height="24"/>
@@ -46,7 +46,7 @@ export default function App() {
         </li>
         <li className="nav-item">
             <NavLink className="btn btn-light btn-outline-primary" to="/projects">
-                  Projects
+                  See My Past Work
             </NavLink>
         </li>
         {/* <li className="nav-item">
@@ -80,8 +80,10 @@ export default function App() {
 </nav>
 <Routes>
       <Route exact path='/about' element={<About/>}/>
+      <Route path="/" exact component={() => <About />} />
       <Route exact path='/projects' element={<Projects/>}/>
       {/* <Route exact path='/employee' element={<Employee/>}/> */}
+      <Route path="/" element={<Navigate to="/about" />} />
   </Routes>
   </div>
   );

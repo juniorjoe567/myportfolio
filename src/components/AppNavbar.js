@@ -11,7 +11,7 @@ export default function AppNavbar() {
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
 
   return (
-    <nav className="navbar navbar-expand-lg bg-light">
+    <nav className="navbar navbar-expand-lg bg-dark">
   <div className="container-fluid">
   <a className="navbar-brand" href="#">
       <img src="./images/react.svg" alt="Bootstrap" width="30" height="24"/>
