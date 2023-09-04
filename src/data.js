@@ -23,7 +23,22 @@ export const projects = [
     image: "./policia.png",
     link: "",
   },
-  
+  {
+    title: "Rukeya Movies",
+    subtitle: "Technologies: Web, React, REST APIs",
+    description:
+      "Rukeya Movies is a web application which allows users to browse movies and as well make libraries of those they have watched and those they would like to watch.",
+    image: "./SiteMockups.svg",
+    link: "",
+  },
+  {
+    title: "EVD Reporting App",
+    subtitle: "Technologies: Mobile, Android, SQLite, Skype SDK, Firebase, Google Maps API, Java",
+    description:
+      "EVD Reporting App is an android application which users can use to report cases on Ebola Virus Disease. Users can also see treatment centers in their district and get directions to any of them. Assessment centers can admit patients based on the doctor's recommendation. Doctors from different treatment centers can also have an in app communication with their peers.",
+    image: "./mockup.png",
+    link: "",
+  },
   // {
   //   title: "DevChat",
   //   subtitle: "React and Firebase",
@@ -67,3 +82,23 @@ export const skills = [
   "Xamarin",
   "Material UI",
 ];
+
+
+export const technologies=[
+  {
+    name:"React",
+    image:"./images/react.svg"
+  },
+  {
+    name:"Javascript",
+    image:"./images/javascript.svg"
+  },
+  {
+    name:"React",
+    image:"./images/jquery.svg"
+  },
+  {
+    name:"Bootstrap",
+    image:"./images/bootstrap.svg"
+  },
+]
