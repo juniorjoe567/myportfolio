@@ -80,8 +80,8 @@ export default function App() {
 </nav>
 <Routes>
       <Route exact path='/about' element={<About/>}/>
-      <Route path="/" exact component={() => <About />} />
-      <Route exact path='/projects' element={<Projects/>}/>
+      {/* <Route path="/" exact component={() => <About />} /> */}
+      <Route path='/projects' element={<Projects/>}/>
       {/* <Route exact path='/employee' element={<Employee/>}/> */}
       <Route path="/" element={<Navigate to="/about" />} />
   </Routes>
