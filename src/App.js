@@ -44,9 +44,19 @@ export default function App() {
                   About
             </NavLink>
         </li>
-        <li className="nav-item">
+        <li className="nav-item" style={{marginRight:"10px"}}>
             <NavLink className="btn btn-light btn-outline-primary" to="/projects">
                   See My Past Work
+            </NavLink>
+        </li>
+        <li className="nav-item" style={{marginRight:"10px"}}>
+            <NavLink className="btn btn-light btn-outline-primary" to="/skills">
+                  Skills
+            </NavLink>
+        </li>
+        <li className="nav-item">
+            <NavLink className="btn btn-light btn-outline-primary" to="/contact">
+                  Get in touch
             </NavLink>
         </li>
         {/* <li className="nav-item">
@@ -82,6 +92,8 @@ export default function App() {
       <Route exact path='/about' element={<About/>}/>
       {/* <Route path="/" exact component={() => <About />} /> */}
       <Route path='/projects' element={<Projects/>}/>
+      <Route path='/skills' element={<Skills/>}/>
+      <Route path='/contact' element={<Contact/>}/>
       {/* <Route exact path='/employee' element={<Employee/>}/> */}
       <Route path="/" element={<Navigate to="/about" />} />
   </Routes>

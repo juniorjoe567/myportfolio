@@ -25,48 +25,35 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="relative">
-      <footer className="relative bg-gray-800 pt-8 pb-6">
-  <div className="container mx-auto px-4">
-    <div className="flex flex-wrap text-left lg:text-left">
-      <div className="w-full lg:w-6/12 px-4">
-        <h4 className="text-2xl fonat-semibold text-blueGray-700">Let's get in touch!</h4>
-        <h5 className="text-md mt-0 mb-2 text-blueGray-600">
-          Find me on any of these platforms.
-        </h5>
-        <div className="mt-6 lg:mb-0 mb-6">
-          <button class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-            <i className="fab fa-twitter"></i>
-          </button>
-          <button className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-            <i className="fab fa-github"></i>
-          </button>
-          <button class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-            <i className="fab fa-instagram"></i>
-          </button>
+    <section id="skills" className="mb-5">
+      <div className="container">
+      <div className="flex flex-col w-full P-4">
+          {/* <CodeIcon className="mx-auto inline-block w-10 mb-4" /> */}
+          <div className="flex flex-col text-center p-4">
+          {/* <CodeIcon className="mx-auto inline-block w-10 mb-4" /> */}
+          <h2 className="">
+            Let's Get in touch!
+          </h2>
+          {/* <p className="">
+            Through out my experience as a developer, below are some of the personal research projects I have done
+          to enhance my craft;
+          
+          </p> */}
         </div>
-      </div>
-      <div className="w-full lg:w-6/12 px-4">
-        <div className="flex flex-wrap items-top mb-6">
-          <div className="w-full lg:w-5/12 px-4 ml-auto">
-            <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Contact Me</span>
-            <p>Tel: +256 770 963 149</p>
-            <p>Email: rukejoseph@gmail.com</p>
+
+        </div>
+        
+        <div className="row" style={{background:"#1f2937"}}>
+          <div className="col-sm-12 text-center p-3" style={{background:"black",padding:"20px !important"}}>
+            <p>Need My Services?</p>
+               Email: rukejoseph@gmail.com<br/>
+               Github: juniorjoe567 | Skype: juniorjoe567
+
           </div>
           
         </div>
+
       </div>
-    </div>
-    <hr className="my-6 border-blueGray-300"></hr>
-    <div className="flex flex-wrap items-center md:justify-between justify-center">
-      <div className="w-full md:w-4/12 px-4 mx-auto text-center">
-        <div className="text-sm text-blueGray-500 font-semibold py-1">
-          Copyright © <span id="get-current-year">2023</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
     </section>
   );
 }

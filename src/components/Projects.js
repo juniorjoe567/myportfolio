@@ -9,10 +9,10 @@ export default function Projects() {
       <section id="projects" className="">
       <div className="container">
         <div className="flex flex-col text-center p-4">
-          {/* <CodeIcon className="mx-auto inline-block w-10 mb-4" /> */}
-          <h1 className="">
+          {/* <CodeIcon className="mx-auto inline-block w-2 mb-4" /> */}
+          <h2 className="">
             Apps I've Built
-          </h1>
+          </h2>
           <p className="">
             Through out my experience as a developer, below are some of the personal research projects I have done
           to enhance my craft;
@@ -32,16 +32,16 @@ export default function Projects() {
                     <div className="flex relative justify-center">
                       <img
                         alt="gallery"
-                        className="object-cover object-center rounded"
+                        className="object-cover object-center rounded image-responsive"
                         width={400}
                         src={project.image}
                       />
                       
                     </div>
-                    <div className=""><h3 className="text-center">{project.title}</h3>
-                        <h5 className="">
+                    <div className=""><h5 className="text-center mt-4" style={{fontWeight:"bold"}}><u>{project.title}</u></h5>
+                        <h6 className="" style={{color:"#0d919f"}}>
                           {project.subtitle}
-                        </h5>
+                        </h6>
                         <p className="leading-relaxed">{project.description}</p></div>
                   </a>
                     </div>

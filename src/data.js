@@ -1,7 +1,7 @@
 export const projects = [
   {
     title: "E-Accountant",
-    subtitle: "Technologies: Web, C#, .Net Core, SQL, JQuery, Bootstrap",
+    subtitle: "Web, C#, .Net Core, SQL, JQuery, Bootstrap",
     description:
       "E-Accountant is a web application whose aim is to help you track life goals, savings as well as how your goals feed into investments.",
     image: "./eaccountant.png",
@@ -9,7 +9,7 @@ export const projects = [
   },
   {
     title: "Printhulk Business Site",
-    subtitle: "Technologies: Web, C#, .Net Core, Bootstrap",
+    subtitle: "Web, C#, .Net Core, Bootstrap",
     description:
       "Printhulk is a web application for show casing the work done by one of the local companies which deals in promotional items.",
     image: "./printhulk.png",
@@ -17,7 +17,7 @@ export const projects = [
   },
   {
     title: "Policia",
-    subtitle: "Technologies: Mobile, C#, .Net MAUI, Firebase, SQLite",
+    subtitle: "Mobile, C#, .Net MAUI, Firebase, SQLite",
     description:
       "Policia is a mobile application which users can use to report cases to police stations near them, access contacts to near by police stations and also get latest communication from Police. Users can also access Lost and found items.",
     image: "./policia.png",
@@ -25,7 +25,7 @@ export const projects = [
   },
   {
     title: "Rukeya Movies",
-    subtitle: "Technologies: Web, React, REST APIs",
+    subtitle: "Web, React, REST APIs",
     description:
       "Rukeya Movies is a web application which allows users to browse movies and as well make libraries of those they have watched and those they would like to watch.",
     image: "./SiteMockups.svg",
@@ -33,7 +33,7 @@ export const projects = [
   },
   {
     title: "EVD Reporting App",
-    subtitle: "Technologies: Mobile, Android, SQLite, Skype SDK, Firebase, Google Maps API, Java",
+    subtitle: "Mobile, Android, SQLite, Skype SDK, Firebase, Google Maps API, Java",
     description:
       "EVD Reporting App is an android application which users can use to report cases on Ebola Virus Disease. Users can also see treatment centers in their district and get directions to any of them. Assessment centers can admit patients based on the doctor's recommendation. Doctors from different treatment centers can also have an in app communication with their peers.",
     image: "./mockup.png",

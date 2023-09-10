@@ -1,4 +1,6 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Routes, NavLink, Navigate } from 'react-router-dom';
+
 
 export default function About() {
   return (
@@ -10,16 +12,19 @@ export default function About() {
         <p className="mb-8 leading-relaxed">
             I am a Microsoft Certified self taught software developer.
             I aim at creating unique, innovative, reliable and accessible software solutions.<br/> 
-            These range from Web Applications to Cross Platform Mobile Applications. With the Technologies in my docket,
+            These range from Web Applications to Cross Platform Mobile Applications. <br/>With the Technologies in my docket,
             I can get work done in a short period of time.
 
         </p>
             <div className="flex justify-center">
-              <a
+            <NavLink className="btn btn-info" to="/contact">
+            Work With Me
+            </NavLink>
+              {/* <a
                 href="#contact"
                 className="btn btn-info" style={{marginRight:"10px"}}>
                 Work With Me
-              </a>
+              </a> */}
               {/* <a
                 href="#projects"
                 className="btn btn-primary">

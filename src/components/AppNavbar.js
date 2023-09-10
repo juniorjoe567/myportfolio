@@ -3,7 +3,8 @@ import { ArrowRightIcon } from "@heroicons/react/solid";
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-dom';
 import Projects from "./Projects";
- import About from './About';
+import Skills from "./Skills";
+import About from './About';
 
 export default function AppNavbar() {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
@@ -31,6 +32,11 @@ export default function AppNavbar() {
         <li className="nav-item">
             <NavLink className="btn btn-light btn-outline-primary" to="/projects">
                   Projects
+            </NavLink>
+        </li>
+        <li className="nav-item">
+            <NavLink className="btn btn-light btn-outline-primary" to="/skills">
+                  Skills
             </NavLink>
         </li>
         {/* <li className="nav-item">
@@ -63,6 +69,7 @@ export default function AppNavbar() {
   <Routes>
       <Route exact path='/about' element={<About/>}/>
       <Route exact path='/projects' element={<Projects/>}/>
+      <Route exact path='/skills' element={<Skills/>}/>
       {/* <Route exact path='/employee' element={<Employee/>}/> */}
   </Routes>
 </nav>
