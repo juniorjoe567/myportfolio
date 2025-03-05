@@ -36,15 +36,15 @@ export default function Projects() {
                       </div>
                       <div className="">
                         <h5
-                          className="text-center mt-4"
+                          className="text-center mt-4 project-title"
                           style={{ fontWeight: "bold" }}
                         >
-                          <u>{project.title}</u>
+                          {project.title}
                         </h5>
-                        <h6 className="" style={{ color: "#0d919f" }}>
+                        <span className="techs" style={{ color: "#0d919f" }}>
                           {project.subtitle}
-                        </h6>
-                        <p className="leading-relaxed">{project.description}</p>
+                        </span>
+                        <p className="leading-relaxed p-3">{project.description}</p>
                       </div>
                     </a>
                   </div>

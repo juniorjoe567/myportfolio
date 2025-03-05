@@ -29,7 +29,7 @@ export default function App() {
      </main> */}
 
       <nav
-        className="navbar navbar-expand-lg shadow-sm bg-white rounded"
+        className="navbar navbar-expand-lg shadow-sm rounded navheader"
         style={{ background: "white" }}
       >
         <div className="container-fluid">
@@ -110,7 +110,7 @@ export default function App() {
                   className="btn btn-light btn-outline-primary"
                   to="/contact"
                 >
-                  Get in touch
+                  Work With Me
                 </NavLink>
               </li>
               {/* <li className="nav-item">

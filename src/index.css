@@ -7,7 +7,42 @@
     color:#89909c;
     
 } */
-
+#root{
+    background: #ffffff;
+    font-family: aptos;
+}
 a{
     text-decoration: none !important;
+}
+
+.aboutMe{
+    color: #2772a0;
+    font-family: aptos;
+    font-size: 18px;
+}
+.navheader{
+    background: #ffffff !important
+}
+
+.heading{
+    color: #2772a0;
+    font-family: cambria;
+  font-size: 41px;
+}
+
+.leading-relaxed{
+    color: #122849 !important;
+    font-family: aptos;
+}
+
+.project-title{
+    color:#2772a0
+}
+.techs{
+    background: #e1f1ff;
+  padding: 2px 11px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-family: aptos;
 }

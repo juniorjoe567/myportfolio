@@ -8,12 +8,12 @@ export const projects = [
     link: "https://muvyhub.netlify.app",
   },
   {
-    title: "E-Accountant",
+    title: "YoMoney",
     subtitle: "Web, C#, .Net Core, SQL, JQuery, Bootstrap",
     description:
-      "E-Accountant is a web application whose aim is to help you track life goals, savings as well as how your goals feed into investments.",
+      "YoMoney is a web application whose aim is to help you track life goals, savings as well as how your goals feed into investments.",
     image: "./eaccountant.png",
-    link: "",
+    link: "http://yomoney.runasp.net/Account/Login?ReturnUrl=%2F",
   },
   {
     title: "Printhulk Business Site",
