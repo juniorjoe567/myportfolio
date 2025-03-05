@@ -1,7 +1,7 @@
 export const projects = [
   {
     title: "MuvyHub",
-    subtitle: "Web, React, REST APIs, Firebase, Google Sign In",
+    subtitle: "Web, React, REST APIs, Redux, Firebase, Google Sign In",
     description:
       "MuvyHub is a web application which allows users to browse movies and as well make libraries of those they have watched and those they would like to watch.",
     image: "./muvyhub.jpg",
@@ -12,8 +12,16 @@ export const projects = [
     subtitle: "Web, C#, .Net Core, SQL, JQuery, Bootstrap",
     description:
       "YoMoney is a web application whose aim is to help you track life goals, savings as well as how your goals feed into investments.",
-    image: "./eaccountant.png",
+    image: "./yomoney.png",
     link: "http://yomoney.runasp.net/Account/Login?ReturnUrl=%2F",
+  },
+  {
+    title: "Dcgram",
+    subtitle: "Web, React, Bootstrap",
+    description:
+      "Dcgram is an instagram clone app that is still under development.",
+    image: "./dcgram.png",
+    link: "https://dcgram.netlify.app",
   },
   {
     title: "Printhulk Business Site",
