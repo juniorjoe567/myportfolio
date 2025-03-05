@@ -1,5 +1,6 @@
 import { CodeIcon } from "@heroicons/react/solid";
 import React from "react";
+import Contact from "./Contact";
 import { projects } from "../data";
 
 export default function Projects() {
@@ -54,6 +55,7 @@ export default function Projects() {
           </div>
         </section>
       </div>
+      <Contact></Contact>
     </section>
   );
 }

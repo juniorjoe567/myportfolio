@@ -4,7 +4,7 @@ export const projects = [
     subtitle: "Web, React, REST APIs, Redux, Firebase, Google Sign In",
     description:
       "MuvyHub is a web application which allows users to browse movies and as well make libraries of those they have watched and those they would like to watch.",
-    image: "./muvyhub.jpg",
+    image: "./muvyhubpic.png",
     link: "https://muvyhub.netlify.app",
   },
   {

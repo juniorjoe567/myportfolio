@@ -25,13 +25,12 @@ export default function Contact() {
   }
 
   return (
-    <section id="skills" className="mb-5">
-      <div className="container">
-        <div className="flex flex-col w-full P-4">
+    <section id="skills" className="mb-1">
+      <div className="flex flex-col w-full P-4">
           {/* <CodeIcon className="mx-auto inline-block w-10 mb-4" /> */}
           <div className="flex flex-col text-center p-4">
             {/* <CodeIcon className="mx-auto inline-block w-10 mb-4" /> */}
-            <h2 className="">Let's Get in touch!</h2>
+            {/* <h2 className="">Let's Get in touch!</h2> */}
             {/* <p className="">
             Through out my experience as a developer, below are some of the personal research projects I have done
           to enhance my craft;
@@ -45,13 +44,12 @@ export default function Contact() {
             className="col-sm-12 text-center p-3"
             style={{ background: "#f0f0f0", padding: "20px !important" }}
           >
-            <p>Need My Services?</p>
-            Email: rukejoseph@gmail.com
+            <p><b>Need My Services?</b></p>
+            <b>Email:</b> rukejoseph@gmail.com
             <br />
-            Github: juniorjoe567 | Skype: juniorjoe567
+            <b>Github:</b> juniorjoe567 | <b>Skype:</b> juniorjoe567
           </div>
         </div>
-      </div>
     </section>
   );
 }

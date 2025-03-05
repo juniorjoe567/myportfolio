@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, NavLink } from 'react-router-dom';
+import Contact from "./Contact";
 
 
 export default function About() {
@@ -7,15 +8,11 @@ export default function About() {
     <section id="about">
         <div className="row align-items-left">
           <div className="col-md-6 p-5">
-            <h2 className="heading">Hello, I'm Joseph.</h2>
+            <h2 className="heading animated-text" id="animatedText">Hello, I'm Joseph.</h2>
             <p className="aboutMe">
               I specialize in developing web and mobile applications.
               <br /><br />
-              As a self-taught, Microsoft Certified software developer, I focus on
-              building innovative, reliable, and accessible solutions. My expertise spans web
-              applications to cross-platform mobile development, ensuring efficient and high-quality results.
-              <br /><br />
-              With a strong background in ASP.NET Core, I excel in backend development,
+              I have a strong background in ASP.NET Core, I excel in backend development,
               designing scalable and high-performance applications. I have experience in microservices
               architecture, third-party service integrations, and implementing secure, optimized backend solutions.
               I am passionate about solving complex system challenges, enhancing performance,
@@ -23,13 +20,13 @@ export default function About() {
             </p>
             
             <div className="flex justify-center">
-              <NavLink className="btn btn-info" to="/contact">
-                Work With Me
-              </NavLink>
+              <NavLink className="btn btn-secondary" to="/projects">
+                      See My Past Work
+                    </NavLink>
             </div>
           </div>
           <div className="col-md-6 p-5">
-          <h4 className="heading">Skills</h4>
+          <h2 className="heading">Skills</h2>
             <ul className="list-group mb-4">
               <li className="list-group-item"><strong>Programming Languages:</strong> C#, JavaScript, Kotlin</li>
               <li className="list-group-item"><strong>Back-End Development:</strong> ASP.NET Core, Entity Framework Core, Web API, TDD</li>
@@ -42,6 +39,9 @@ export default function About() {
             </ul>
           </div>
         </div>
+        <Contact></Contact>
       </section>
+
+      
   );
 }

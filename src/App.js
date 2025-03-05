@@ -80,7 +80,7 @@ export default function App() {
                   className="btn btn-light btn-outline-primary"
                   to="/about"
                 >
-                  About
+                  About Me
                 </NavLink>
               </li>
               <li
@@ -98,21 +98,21 @@ export default function App() {
                 className="nav-item mt-1 mb-1"
                 style={{ marginRight: "10px" }}
               >
-                <NavLink
+                {/* <NavLink
                   className="btn btn-light btn-outline-primary"
                   to="/skills"
                 >
                   Skills
-                </NavLink>
+                </NavLink> */}
               </li>
-              <li className="nav-item mt-1 mb-1">
+              {/* <li className="nav-item mt-1 mb-1">
                 <NavLink
-                  className="btn btn-light btn-outline-primary"
+                  className="btn btn-default btn-outline-secondary"
                   to="/contact"
                 >
                   Work With Me
                 </NavLink>
-              </li>
+              </li> */}
               {/* <li className="nav-item">
           <a className="nav-link" href="#">Link</a>
         </li> */}
@@ -136,9 +136,9 @@ export default function App() {
                 className="nav-link active mt-1 mb-1"
                 aria-current="page"
                 target="_blank"
-                href="https://drive.google.com/file/d/1drlu1GtYx0zBv_BL9xpongQrklWFw_1N/view?usp=drive_link"
+                href="https://docs.google.com/document/d/1jcVWmJRWagejqe3nuG98HjzSC5TgXFeu/edit?usp=sharing&ouid=110094816413758661200&rtpof=true&sd=true"
               >
-                <i>View My CV</i>
+                <b>View My CV</b>
               </a>
             </div>
             {/* <form className="d-flex" role="search">
@@ -152,7 +152,7 @@ export default function App() {
         <Route exact path="/about" element={<About />} />
         {/* <Route path="/" exact component={() => <About />} /> */}
         <Route path="/projects" element={<Projects />} />
-        <Route path="/skills" element={<Skills />} />
+        {/* <Route path="/skills" element={<Skills />} /> */}
         <Route path="/contact" element={<Contact />} />
         {/* <Route exact path='/employee' element={<Employee/>}/> */}
         <Route path="/" element={<Navigate to="/about" />} />
