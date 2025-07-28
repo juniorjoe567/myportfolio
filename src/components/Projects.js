@@ -1,61 +1,43 @@
-import { CodeIcon } from "@heroicons/react/solid";
 import React from "react";
-import Contact from "./Contact";
 import { projects } from "../data";
 
 export default function Projects() {
   return (
-    <section>
-      <div className="row">
-        <section id="projects" className="">
-          <div className="container">
-            <div className="flex flex-col text-center p-4">
-              {/* <CodeIcon className="mx-auto inline-block w-2 mb-4" /> */}
-              <h2 className="">Apps I've Built</h2>
-              <p className="">
-                Through out my experience as a developer, below are some of the
-                personal research projects I have done to enhance my craft;
-              </p>
-            </div>
-            <div className="row" style={{ marginTop: "10px" }}>
-              {projects.map((project) => (
-                <div key={project.id} className="col-sm-6 text-center pb-3">
-                  <div className="p-3" style={{ border: "2px solid #f0f0f0" }}>
-                    <a
-                      href={project.link}
-                      key={project.image}
-                      className=""
-                      target="_blank"
-                    >
-                      <div className="flex relative justify-center">
-                        <img
-                          alt="gallery"
-                          className="rounded image-responsive"
-                          width={"80%"}
-                          src={project.image}
-                        />
-                      </div>
-                      <div className="">
-                        <h5
-                          className="text-center mt-4 project-title"
-                          style={{ fontWeight: "bold" }}
-                        >
-                          {project.title}
-                        </h5>
-                        <span className="techs" style={{ color: "#0d919f" }}>
-                          {project.subtitle}
-                        </span>
-                        <p className="leading-relaxed p-3">{project.description}</p>
-                      </div>
-                    </a>
-                  </div>
+    <section id="projects" className="container py-5">
+      <div className="text-center mb-5">
+        <h2 className="fw-bold">Apps I've Built</h2>
+        <p className="lead text-muted">A selection of my personal and professional work.</p>
+      </div>
+      <div className="row g-4">
+        {projects.map((project) => (
+          <div key={project.title} className="col-md-6 col-lg-6">
+            <div className="card project-card h-100">
+              <div className="card-img-container">
+                <img src={project.image} className="card-img-top" alt={project.title} />
+              </div>
+              <div className="card-body d-flex flex-column">
+                <h5 className="card-title fw-bold">{project.title}</h5>
+                <p className="card-text text-muted flex-grow-1">{project.description}</p>
+                
+                <div className="tech-stack-pills mb-3">
+                  {project.subtitle.split(", ").map((tech) => (
+                    <span key={tech} className="badge tech-pill">{tech}</span>
+                  ))}
                 </div>
-              ))}
+
+                <a 
+                  href={project.link || '#'} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className={`btn btn-sm btn-outline-primary-custom ${!project.link && 'disabled'}`}
+                >
+                  {project.link ? 'View Project' : 'Private Repo'}
+                </a>
+              </div>
             </div>
           </div>
-        </section>
+        ))}
       </div>
-      <Contact></Contact>
     </section>
   );
 }

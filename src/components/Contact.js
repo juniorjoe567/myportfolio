@@ -1,55 +1,33 @@
 import React from "react";
 
 export default function Contact() {
-  const [name, setName] = React.useState("");
-  const [email, setEmail] = React.useState("");
-  const [message, setMessage] = React.useState("");
-
-  function encode(data) {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
-  }
-
-  function handleSubmit(e) {
-    e.preventDefault();
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", name, email, message }),
-    })
-      .then(() => alert("Message sent!"))
-      .catch((error) => alert(error));
-  }
-
   return (
-    <section id="skills" className="mb-1">
-      <div className="flex flex-col w-full P-4">
-          {/* <CodeIcon className="mx-auto inline-block w-10 mb-4" /> */}
-          <div className="flex flex-col text-center p-4">
-            {/* <CodeIcon className="mx-auto inline-block w-10 mb-4" /> */}
-            {/* <h2 className="">Let's Get in touch!</h2> */}
-            {/* <p className="">
-            Through out my experience as a developer, below are some of the personal research projects I have done
-          to enhance my craft;
-          
-          </p> */}
-          </div>
+    <footer id="contact" className="contact-footer mt-5 py-5">
+      <div className="container text-center">
+        <h3 className="fw-bold">Let's Connect!</h3>
+        <p className="lead text-muted mb-3">
+          I'm currently available for freelance work and new opportunities.
+        </p>
+        
+        <div className="contact-info mb-4">
+          <span><i className="bi bi-envelope-fill me-2"></i><a href="mailto:rukejoseph@gmail.com">rukejoseph@gmail.com</a></span>
         </div>
 
-        <div className="row" style={{ background: "#f0f0f0" }}>
-          <div
-            className="col-sm-12 text-center p-3"
-            style={{ background: "#f0f0f0", padding: "20px !important" }}
-          >
-            <p><b>Need My Services?</b></p>
-            <b>Email:</b> rukejoseph@gmail.com
-            <br />
-            <b>Github:</b> juniorjoe567 | <b>Skype:</b> juniorjoe567
-          </div>
+        <div className="social-icons">
+          <a href="https://github.com/juniorjoe567" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i className="bi bi-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/rukeijakare-joseph-junior-711095122" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i className="bi bi-linkedin"></i>
+          </a>
+          <a href="https://wa.me/256778828759" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <i className="bi bi-whatsapp"></i>
+          </a>
+          <a href="https://x.com/joerukeya" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <i className="bi bi-twitter-x"></i>
+          </a>
         </div>
-    </section>
+      </div>
+    </footer>
   );
 }
