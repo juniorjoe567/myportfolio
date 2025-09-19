@@ -1,9 +1,10 @@
-/* Color palette */
+/* Cozy Blue Color Palette */
 :root {
-  --bg-color: #121212;
-  --surface-color: #1e1e1e;
-  --primary-color: #1DB954;
-  --primary-hover-color: #1ED760;
+  --bg-color: #121212; /* Deep charcoal */
+  --surface-color: #1e1e1e; /* Dark surface */
+  --primary-color: #6CA6F0; /* Muted sky blue */
+  --primary-hover-color: #5A95E5; /* Slightly deeper blue for hover */
+  --accent-color: #A5D8FF; /* Soft pastel blue highlight */
   --text-color: #FFFFFF;
   --text-muted-color: #b3b3b3;
   --border-color: #282828;
@@ -16,18 +17,20 @@ html, body, #root {
   font-family: var(--font-family);
 }
 
-/* General Styles */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   color: var(--text-color);
 }
+
 a {
   color: var(--primary-color);
   text-decoration: none !important;
 }
+
 .text-muted {
   color: var(--text-muted-color) !important;
 }
+
 .main-content {
   padding-top: 70px;
 }
@@ -38,6 +41,20 @@ a {
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border-color);
 }
+
+.nav-link:hover {
+  color: var(--text-color) !important;
+}
+
+.nav-link.active {
+  color: var(--text-color) !important;
+  background-color: var(--surface-color);
+  border-radius: 50px; 
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Buttons */
 .btn-primary-custom {
   background-color: var(--primary-color);
   border-color: var(--primary-color);
@@ -50,8 +67,19 @@ a {
 .btn-primary-custom:hover {
   background-color: var(--primary-hover-color);
   border-color: var(--primary-hover-color);
-  color: #000000 !important;
   transform: scale(1.05);
+}
+
+.btn-outline-custom {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 50px;
+  padding: 10px 25px;
+  transition: all 0.2s ease;
+}
+.btn-outline-custom:hover {
+  background-color: var(--primary-color);
+  color: #000;
 }
 
 /* Hero Section */
@@ -65,7 +93,7 @@ a {
   margin-bottom: 1.5rem;
 }
 .highlight-text {
-  color: var(--primary-color);
+  color: var(--accent-color);
 }
 #about .lead {
   font-size: 1.3rem;
@@ -92,7 +120,7 @@ a {
 }
 .skill-item-new:hover {
   transform: translateY(-5px); 
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 0 20px rgba(29, 185, 84, 0.1); 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 0 20px rgba(108, 166, 240, 0.15); 
 }
 .skill-item-new span {
   color: var(--text-color);
@@ -131,7 +159,7 @@ a {
 }
 .project-card .card-body { padding: 1.5rem; }
 .project-card .card-title {
-  color: var(--primary-color);
+  color: var(--accent-color);
   font-weight: 700;
   font-size: 1.5rem;
 }
@@ -166,7 +194,6 @@ a {
 }
 
 /* Skill Constellation */
-
 @keyframes float {
   0%   { transform: translateY(0px); }
   50%  { transform: translateY(-15px); }
@@ -202,21 +229,18 @@ a {
   transition: opacity 0.3s ease;
   opacity: 0.7;
 }
-
 .art-icon-wrapper:hover {
   opacity: 1;
 }
-
 .art-icon-glyph {
   font-size: 5rem;
   color: var(--primary-color);
 }
-
 .art-icon-wrapper:nth-child(2) { animation-delay: -2s; }
 .art-icon-wrapper:nth-child(3) { animation-delay: -4s; }
 .art-icon-wrapper:nth-child(4) { animation-delay: -6s; }
 
-/* Tooltip Arrow  */
+/* Tooltip */
 .art-icon-wrapper::before {
   content: '';
   position: absolute;
@@ -231,8 +255,6 @@ a {
   transition: all 0.3s ease;
   z-index: 10;
 }
-
-/* Tooltip Text Box */
 .art-icon-wrapper::after {
   content: attr(data-tooltip);
   position: absolute;
@@ -252,14 +274,11 @@ a {
   transition: all 0.3s ease;
   z-index: 10;
 }
-
-/* Show tooltip and arrow on hover*/
 .art-icon-wrapper:hover::before,
 .art-icon-wrapper:hover::after {
   opacity: 1;
   visibility: visible;
 }
-
 
 /* Logo */
 .navbar-brand-custom {
@@ -268,7 +287,6 @@ a {
   gap: 12px;
   text-decoration: none !important;
 }
-
 .logo-box {
   display: flex;
   align-items: center;
@@ -282,39 +300,25 @@ a {
   color: #000;
   transition: transform 0.3s ease;
 }
-
 .logo-text {
   font-size: 1.25rem;
   font-weight: 600;
   color: var(--text-color);
   letter-spacing: 0.5px;
 }
-
 .navbar-brand-custom:hover .logo-box {
   transform: rotate(-10deg) scale(1.1);
 }
 
-.nav-link:hover {
-  color: var(--text-color) !important;
-}
-
-.nav-link.active {
-  color: var(--text-color) !important;
-  background-color: var(--surface-color);
-  border-radius: 50px; 
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
+/* Outline Button Variant */
 .btn-outline-primary-custom {
-  color: var(--primary-color); /* CHANGED to primary green */
-  border-color: var(--primary-color); /* CHANGED to primary green */
-  font-weight: 600; /* Added for more emphasis */
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  font-weight: 600;
   border-radius: 50px;
   align-self: flex-start;
   transition: all 0.2s ease;
 }
-
 .btn-outline-primary-custom:hover {
   background-color: var(--primary-color);
   border-color: var(--primary-color);

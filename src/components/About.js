@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import HeroArt from "./HeroArt"; 
 
 const skills = [
@@ -20,17 +21,21 @@ export default function About() {
           <div className="col-lg-7 text-center text-lg-start"> 
             <h1 className="hero-title">
               Full-Stack Developer &<br />
-              <span className="highlight-text">Problem Solver.</span>
+              <span className="highlight-text">Mentor.</span>
             </h1>
-            {}
             <p className="lead text-muted mb-4 mx-auto mx-lg-0">
               Based in <span className="highlight-text">Kampala</span>, I craft
               high-performance web applications, transforming complex ideas into
               elegant, scalable software.
             </p>
-            <a href="#skills" className="btn btn-primary-custom">
+
+            {/* Buttons with routing */}
+            <a href="#skills" className="btn btn-primary-custom me-2">
               See My Skills
             </a>
+            <Link to="/projects" className="btn btn-outline-custom">
+              View My Projects
+            </Link>
           </div>
           <div className="col-lg-5">
             <HeroArt />
